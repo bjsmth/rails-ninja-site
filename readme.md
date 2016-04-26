@@ -8,4 +8,7 @@
    
    $ rake content
 
-   
+ 
+## Деплой
+
+   $ bash deploy.sh   
