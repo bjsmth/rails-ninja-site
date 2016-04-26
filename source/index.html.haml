@@ -1,0 +1,12 @@
+%h3 Работы:
+%ul
+  - data.pages.each do |f|
+    %li
+      %a{:href => "/works/#{f.id}"}= f.title
+      \- #{f.description}
+%br
+%h3 Услуги:
+%ul
+  - data.services.each do |f|
+    %li
+      %a{:href => "/services/#{f.id}"}= f.title

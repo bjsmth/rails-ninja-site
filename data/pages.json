@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Udeli",
+    "title": "http://udeli.ru",
+    "description": "сервис грузоперевозок и доставки.",
+    "url": "http://udeli.ru"
+  },
+  {
+    "id": 2,
+    "name": "Vlancer",
+    "title": "http://vlancer.ru",
+    "description": "биржа видеоконтента.",
+    "url": "http://vlancer.ru"
+  }
+]

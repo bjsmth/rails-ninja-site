@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "Боты для телеграм, парсинг, бэкенд и API для веб сервисов."
+    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+  %body{:class => page_classes}
+    %header
+      .container
+        %h1
+          %a.noshow{:href => "/"} rails-ninja
+        %h2 Боты для телеграм, бэкенд для веб сервисов.
+    %main
+      .container
+        %section#main_content
+          = yield
+    .container
+      %a.btn{:href => "https://github.com/rails-ninja", :target => "_blank"}
+        %i.fa.fa-github.fa-1x
+      %a.btn{:href => "http://instagram.com/rails_ninja", :target => "_blank"}
+        %i.fa.fa-instagram
+      %a.btn{:href => "http://vk.com/rails_ninja", :target => "_blank"}
+        %i.fa.fa-vk
+      %a.btn{:href => "http://twitter.com/ninja_rails", :target => "_blank"}
+        %i.fa.fa-twitter
+      %a.btn{:href => "/blog"}
+        %i.fa.fa-book
